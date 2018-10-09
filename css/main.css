@@ -24,9 +24,30 @@ html {
   text-shadow: 1px 1px 3px #000;
   position: absolute;
   left: 50%;
-  bottom: 1rem;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+}
+
+.polaroid:first-child {
+  left: 180px;
+  top: 100px;
+  transform: rotate(-12deg);
+}
+
+.polaroid:nth-child(2) {
+  left: 280px;
+  top: 150px;
+  transform: rotate(5deg);
+  z-index: 10;
+}
+
+.polaroid:last-child {
+  top: 100px;
+  left: 375px;
+  transform: rotate(33deg);
 }
 
 .polaroid:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 1);
+  transform: rotate(0);
 }
